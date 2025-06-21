@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #111828;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+#grid-size {
+    font-size: large;
+    background-color: orange;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px;
+    cursor: pointer;
+}
