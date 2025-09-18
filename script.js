@@ -2,6 +2,13 @@
 
 const container = document.querySelector('.container');
 
+// rgb(255, 255, 255)
+function randomColor() {
+  return `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(
+    Math.random() * 256
+  )}, ${Math.floor(Math.random() * 256)})`;
+}
+
 for (let i = 1; i <= 256; i++) {
   const unitDiv = document.createElement('div');
 
@@ -11,11 +18,7 @@ for (let i = 1; i <= 256; i++) {
   );
 
   unitDiv.addEventListener('mouseover', () => {
-    unitDiv.style.backgroundColor = `rgb(${Math.floor(
-      Math.random() * 256
-    )}, ${Math.floor(Math.random() * 256)}, ${Math.floor(
-      Math.random() * 256
-    )})`;
+    unitDiv.style.backgroundColor = randomColor();
   });
 
   container.append(unitDiv);
@@ -48,11 +51,7 @@ button.addEventListener('click', () => {
     );
 
     unitDiv.addEventListener('mouseover', () => {
-      unitDiv.style.backgroundColor = `rgb(${Math.floor(
-        Math.random() * 256
-      )}, ${Math.floor(Math.random() * 256)}, ${Math.floor(
-        Math.random() * 256
-      )})`;
+      unitDiv.style.backgroundColor = randomColor();
     });
 
     container.appendChild(unitDiv);
